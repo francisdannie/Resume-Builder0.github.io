@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ResumeBuilder — Home</title>
+
+  <!-- Bootstrap & Icons & Fonts -->
+  <link href="/CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container mt-3">
+      <a class="navbar-brand fw-bold p-2" href="index.html" style="color:#ff6600">ResumeBuilder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item p-2"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item p-2"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item p-2"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item p-2"><a class="nav-link" href="builder.html">Create Resume</a></li>
+          <li class="nav-item p-2"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-5 fw-bold">Create professional resumes in minutes</h1>
+          <p class="lead">Simple templates, instant live preview, and one-click download — land your next interview with a standout resume.</p>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+            <a class="btn btn-accent btn-lg" href="services.html">Get Started</a>
+            <a class="btn btn-outline-light btn-lg" href="builder.html">Create Resume</a>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+          <!-- simple illustrative SVG image -->
+          <img src="https://www.resumebuilder.com/wp-content/uploads/2024/07/Parallax-1.png" alt="Resume illustration" class="img-fluid" style="max-width:500px; filter:drop-shadow(0 8px 20px rgba(0,0,0,0.6));">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES PREVIEW -->
+  <section class="container py-5">
+    <h3 class="section-title text-white">Why ResumeBuilder</h3>
+    <p class="text-white small">Everything you need to create a job-winning resume fast — no design skills required.</p>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-3">
+        <div class="p-3 feature-card h-100 text-center">
+          <div class="mb-3"><i class="bi bi-layout-text-window-reverse" style="font-size:28px; color:var(--accent)"></i></div>
+          <h5 class="fw-bold">Easy Templates</h5>
+          <p class="text-white small">Modern templates that are ATS-friendly and easy to edit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 feature-card h-100 text-center">
+          <div class="mb-3"><i class="bi bi-download" style="font-size:28px; color:var(--accent)"></i></div>
+          <h5 class="fw-bold">Download PDF / Word</h5>
+          <p class="text-white small">Export finished resumes as PDF or DOCX.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 feature-card h-100 text-center">
+          <div class="mb-3"><i class="bi bi-palette" style="font-size:28px; color:var(--accent)"></i></div>
+          <h5 class="fw-bold">Customizable</h5>
+          <p class="text-white small">Adjust fonts, colors, and layout to match your brand.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-3 feature-card h-100 text-center">
+          <div class="mb-3"><i class="bi bi-eye" style="font-size:28px; color:var(--accent)"></i></div>
+          <h5 class="fw-bold">Live Preview</h5>
+          <p class="text-white small">See edits instantly while building your resume.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-4 text-center">
+    <div class="container">
+      <a class="btn btn-accent btn-lg" href="builder.html">Start Building Your Resume</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer py-3">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+      </div>
+      <div>&copy; <span id="year"></span> ResumeBuilder. All rights reserved.</div>   
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
